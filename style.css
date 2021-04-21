@@ -89,26 +89,17 @@ body {
   color: #eee;
 }
 
+/* TOGGLE */
 .toggle {
   display: none;
   position: absolute;
   right: 50px;
   top: 20px;
   cursor: pointer;
-  /* transition: 0.2s ease; */
 }
 
 .toggle.active .bar:first-child {
-  transform: rotate(20deg);
-  /* transform-origin: 100%; */
-}
-
-.toggle.active .bar:nth-child(2) {
-  transform: translateY(10px);
-}
-
-.toggle.active .bar:last-child {
-  display: none;
+  transform: rotateZ(10deg);
 }
 
 .bar {
@@ -118,7 +109,7 @@ body {
   background-color: #fff;
   margin: 3px 0;
   border-radius: 3px;
-  transition: 0.7s ease;
+  transition: all 0.2s ease;
 }
 
 @media (max-width: 768px) {
@@ -134,5 +125,14 @@ body {
   .toggle {
     display: flex;
     flex-direction: column;
+  }
+
+  /* SIDENAV */
+  .sidenav {
+    position: absolute;
+    height: 50vh;
+    width: 100vh;
+    background-color: #cc2b33;
+    opacity: .2;
   }
 }
