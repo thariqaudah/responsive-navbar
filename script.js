@@ -1,5 +1,6 @@
+const sidebar = document.querySelector('.sidebar');
 const toggle = document.querySelector('.toggle');
 
 toggle.addEventListener('click', () => {
-  toggle.classList.toggle('active');
+  sidebar.classList.toggle('active');
 });
